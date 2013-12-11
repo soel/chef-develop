@@ -12,11 +12,13 @@ end
 
 group "apache" do
    group_name node['apache']['group']
-   action :create
+   #action :create
 end
 
 user "apache" do
   group node['apache']['group']
+  home "/var/empty/"
+  shell "/sbin/nologin"
 end
   
 bash "install apache" do
