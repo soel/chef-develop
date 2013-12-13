@@ -8,7 +8,7 @@
 #
 package "munin-node" do
   action :install
-  option '--enablerepo=epel'
+  options '--enablerepo=epel'
 end
 
 template "/etc/munin/munin-node.conf" do
