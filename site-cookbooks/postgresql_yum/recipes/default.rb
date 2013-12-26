@@ -10,6 +10,10 @@ package "postgresql-server" do
        action :install
 end
 
+package "postgresql-devel" do
+       action :install
+end
+
 dataDir = "/var/lib/pgsql/data/"
 if not File.exists? dataDir then
   execute "postgresql-init" do
