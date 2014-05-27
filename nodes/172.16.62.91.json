@@ -1,8 +1,0 @@
-{
-  "run_list":[
-    "recipe[yum::epel]",
-    "recipe[munin-node]",
-    "recipe[apache_yum]",
-    "recipe[rvm]"
-    ]
-}
